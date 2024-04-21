@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Furni-Ecom: Your One-Stop E-Commerce Haven!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Furni-Ecom, where shopping for anything you desire is a breeze! Say goodbye to the hassle of visiting physical stores and negotiating prices. Our platform offers a seamless experience, from browsing to purchasing, right at your fingertips.
 
-## Available Scripts
+!! You're Comfort is Our Goal
 
-In the project directory, you can run:
+## What We Offer:
 
-### `npm start`
+1. Extensive Product Range: Explore a wide variety of products, from furniture to home decor and beyond.
+2. Convenient Filtering: Easily find what you need with filters for ratings, prices, categories, and more.
+3. Simple Checkout: Sign up for free, add items to your cart, and enjoy doorstep delivery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Why Choose Furni-Ecom?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Affordable Prices: Say goodbye to bargaining headaches with reasonable prices.
+2. User-Friendly Interface: Navigate effortlessly and find your perfect product in just a few clicks.
+3. Prompt Service: Your comfort is our priority, ensuring timely delivery and excellent customer support.
 
-### `npm test`
+[Experience the Magic of Furni-Ecom Live!](https://furniture-site-frontend.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Explore Furni-Ecom with Our Test User!
 
-### `npm run build`
+Discover the world of Furni-Ecom with our test user account, designed to showcase the platform's features and ease of use.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Test User Credentials:
+Email: testman@gmail.com
+Password: testMan
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Local Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Setting Furni-Ecom locally is easy follow the below steps:
 
-### `npm run eject`
+1.  **Clone Project** <br>
+    `git clone https://github.com/MeganusWesker/Furni-Ecom.git` <br> Just Open Vs Code or any other Ide in any location and paste the above git clone command in terminal it will
+    download the whole Project for you
+2.  **Install Dependency**<br>
+    Open two terminals at the root location of the project then in In Order two install modules of both backend and frontend do cd backend in one terminal and cd frontend in second terminal, both terminal should look like in following:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ![alt text](image.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    do npm i --force or npm i in both terminals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3.  **Add Config Variables**<br>
+    Create a config.env file in the backend/config location. writing you're on env variables just to run this project is,feels Boring for you!. I got you just paste the following variables of mine in the config.env you just have created,
+    <br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    ```
+    PORT=4000
+    DB_LOCAl_URI=mongodb+srv://furniture:kSQCpOhvzbaRWyGX@ecommerce.g86ki.mongodb.net/furniture?retryWrites=true&w=majority
+    JWT_SECRET=thisleonrequestingbackup
+    JWT_EXPIRE=5d
+    COOKIE_EXPRIE_TIME=7
+    SMPT_MAIL=meganuswesker@gmail.com
+    SMPT_PASSWORD=ukrxobxrbwemeomh
+    SMPT_SERVICE=gmail
+    SMPT_HOST=smtp.gmail.com
+    SMPT_PORT=465
+    CLOUDINARY_NAME=dtpzknjst
+    CLOUDINARY_API_KEY=114288683792366
+    CLOUDINARY_API_SECRET=R8jXjjSmTEMV77IvkAfMz4p4K94
+    FRONTEND_URL1=http://localhost:3000
+    STRIPE_API_KEY=pk_test_51KAByRSDov8uqpNWO2cu6eEDeKiX62rG00inqv86KLxua7VRpK7p738ZEP5jjIQz572Gn520Bb30kgiurHuVKDB800jryFLMLR
+    STRIPE_SECRET_KEY=sk_test_51KAByRSDov8uqpNWE4GKUwr7bcQkYLwnMX2knwGRY29lofktwPilJT4f2hM0AbFMjNXYkaV98SS9SlKbOF77Svqj002FgrHvJH
+    NODE_ENV=Development
+    ISDOCKER=true
+    ```
 
-## Learn More
+4.  **Run the Project** <br>
+    Just run these scripts in the both terminals
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+          ```
+          For Backend:
+          npm run dev
+          For Frontend:
+          npm run start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+          ```
 
-### Code Splitting
+    Make sure to run the script in the desired terminal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5.  **Use The Project** <br>
+    In Browser search or click http://localhost:3000 you will se the project running there
 
-### Analyzing the Bundle Size
+### Run Locally using DockerImage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Running the project in a container is much easy if you just want to see the things working locally
 
-### Making a Progressive Web App
+1. **Build the Image**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```
+   docker build -t you're-image-name .
+   ```
 
-### Advanced Configuration
+   add whatever image name you want
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. **Run the Image**
 
-### Deployment
+   ```
+   docker run -p 4000:4000 you're-image-name
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Use the Project**
+   Search or Click http://localhost:4000/ and you will see the project running. Make sure to stop the container after use for that do the following:
 
-### `npm run build` fails to minify
+   ```
+   docker ps -> for getting the container Id
+   docker stop containerId
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### No Git? No Problem!
+
+If you prefer not to clone or want a quick start, use our live link or pull the pre-deployed Docker image.
+
+```
+docker pull docker.io/meganuswesker/furnistyle:1.0.0
+
+docker run -p 4000:4000 meganuswesker/furnistyle:1.0.0
+```
+
+This was all about running the project locally, live link and a short description of the project
+
+Experience the convenience of online shopping with Furni-Ecom today!
